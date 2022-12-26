@@ -6,7 +6,6 @@ export default function handler(req, res) {
 
 export function popularMovies() {
   const data = {
-    page: 1,
     results: [
       {
         adult: false,
