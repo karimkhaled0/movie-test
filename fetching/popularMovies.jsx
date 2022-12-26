@@ -3,7 +3,10 @@ import axios from "axios";
 export const popularMovies = async () => {
   const options = {
     method: "GET",
-    url: "https://movie-test-ten.vercel.app/api/popular",
+    url: "/api/popular",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   };
 
   const response = await axios.request(options);
